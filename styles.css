@@ -1,0 +1,355 @@
+/* Reset styles */
+* {
+     margin: 0;
+     padding: 0;
+   }
+
+   /*header*/
+/* Style the header element */
+#header {
+     background-color: aqua;
+     padding: 10px;
+     height: 100px;
+   }
+   
+   /* Style the navigation links */
+   nav ul {
+     list-style: none;
+     margin-left: 40%;
+     padding-top: 20px;
+     display: flex;
+   }
+   
+   nav ul li {
+     margin: 0 50px;
+   }
+   
+   nav ul li a {
+     text-decoration: none;
+     padding: 1px;
+   }
+  
+   /* Reset the default styles */
+
+   /* Global styles */
+   body {
+     font-family: Arial, sans-serif;
+     background-color: wheat;
+     overflow-x: hidden;
+   }
+   main {
+     padding: 2rem;
+   }
+   
+   section {
+     margin-bottom: 2rem;
+   }
+   /*about section*/
+   /* Style for the entire page */
+body {
+     font-family: Arial, sans-serif;
+   }
+   
+   /* Style for the About Me section */
+   #about {
+     width: 100%;
+     margin: 1px 1px 1px 1px;
+     text-align:left;
+     box-sizing: border-box;
+     box-shadow: 1px 1px 1px 1px;
+   }
+   /* Style for the profile picture */
+   #img {
+     border-radius: 50%;
+     width: 200px;
+     height: 200px;
+     margin-bottom: 20px;
+     margin-left: 20px;
+     box-sizing: border-box;
+     box-shadow:1px 1px 10px 10px aqua;
+   }
+   
+   /* Style for the text container */
+   .text-container {
+     display: inline-block;
+     text-align: center;
+   }
+   
+   /* Style for the animated text */
+   .animated-text {
+     font-size: 24px;
+     font-weight: bold;
+     color: #333;
+     margin-top: 20px;
+     margin-left: 4rem;
+     opacity: 0;
+     animation-duration: 2s;
+     animation-fill-mode: forwards;
+   }
+   
+   /* Animation keyframes for the animated text */
+   @keyframes slide-up {
+     0% {
+       opacity: 0;
+       transform: translateY(50px);
+     }
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   @keyframes slide-up {
+     0% {
+       opacity: 0;
+       transform: translateY(50px);
+     }
+     100% {
+       opacity: 1;
+       transform: translateY(0);
+     }
+   }
+   
+   /* Apply the animation to the animated text */
+   #animated-1 {
+     animation-delay: 0.1s;
+     animation-name: slide-up;
+     color: ;
+     animation-iteration-count:infinite;
+   }
+   
+   #animated-2 {
+     color: blueviolet;
+     animation-delay: 0.8s;
+     animation-name: slide-up;
+     animation-iteration-count:infinite;
+   }
+   
+   #animated-3 {
+     color: #007bff;
+     animation-delay: 1.4s;
+     animation-name: slide-up;
+     animation-iteration-count:infinite;
+   }
+   
+   /* Style for the paragraph */
+   #p {
+     font-size: 18px;
+     line-height: 1.5;
+     margin-top: 30px;
+     margin-bottom: 30px;
+     text-align: justify;
+   }
+   
+   /* Style for the download button */
+   #download-btn {
+     padding: 10px 20px;
+     font-size: 20px;
+     background-color: aqua;
+     color: black;
+     box-sizing: border-box;
+     box-shadow: 1px 1px 1px 0px rosybrown;
+     border-radius: 5px;
+     cursor: pointer;
+   }
+   #download-btn:hover {
+     background-color: lightblue;
+   }
+   
+     /*skill styles*/
+     #skills{
+          box-sizing: border-box;
+          box-shadow: 1px 1px 1px 1px ;
+
+     }
+     .title{
+          text-align: center;
+     }
+     #skills ul {
+          list-style: none;
+          padding: 10px 10px 10px 1px;
+        }
+        
+        #skills li {
+          margin: 0 10px 0 0;
+        }
+        
+        #skills li:before {
+          content: attr(data-percent) "%";
+          float: right;
+          font-weight: bold;
+        }
+        
+        #skills .bar {
+          height: 20px;
+          background-color: #eee;
+          border-radius: 5px;
+          position: relative;
+          overflow: hidden;
+        }
+        
+        #skills .bar:after {
+          content: '';
+          display: block;
+          height: 100%;
+          background-color: #007bff;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        
+        #skills .html .bar:after {
+          width: 90%;
+        }
+        
+        #skills .css .bar:after {
+          width: 80%;
+        }
+        
+        #skills .js .bar:after {
+          width: 70%;
+        }
+        
+        #skills .node .bar:after {
+          width: 60%;
+        }
+        
+        #skills .python .bar:after {
+          width: 50%;
+        }
+        
+        #skills .react .bar:after {
+          width: 40%;
+        }
+        
+        #skills .tailwind .bar:after {
+          width: 30%;
+        }
+        /*projects styles*/
+        #projects {
+          padding: 2em;
+          text-align: center;
+          box-sizing: border-box;
+          box-shadow: 1px 1px 1px 1px;
+
+        }
+        
+        #projects h2 {
+          font-size: 2em;
+          margin-bottom: 1em;
+        }
+        
+        #projects ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+        }
+        
+        #projects li {
+          margin: 0.5em;
+        }
+        
+        #projects a {
+          display: block;
+          padding: 1em 2em;
+          background-color: #2c3e50;
+          color: #fff;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: all 0.2s ease;
+        }
+        
+        #projects a:hover {
+          background-color: #34495e;
+        }
+     
+
+        /*form styles*/
+        #contact
+{
+       color: black;
+       box-sizing: border-box;
+       box-shadow: 10px 10px 10px 10px;
+       border-radius: 50px;
+       width: 500px;
+       height: 400px;
+       padding: 40px;
+       margin: 10px;
+       line-height: 3em;
+}
+#name{
+     width: 350px;
+     height: 40px;
+     font-size: 20px;
+     background-color: wheat;
+     border-radius: 10px;
+     color: black;
+     text-transform: bold;
+     margin-left: 40px;
+}
+#email{
+     font-size: 20px;
+     margin-left: 40px;
+     width: 350px;
+     height: 40px;
+     background-color: wheat;
+     border-radius: 10px;
+     color: black;
+     text-transform: bold;
+}
+#message{
+     font-size: 25px;
+     margin-left: 40px;
+     width: 350px;
+     height: 30px;
+     background-color: whit;
+     color: black;
+     text-transform:none;
+}
+#button{
+     width: 350px;
+     height: 40px;
+     background-color: aqua;
+     border-radius: 10px;
+     font-size: 20px;
+     color: black;
+     margin-left: 45px;
+     cursor:  pointer;
+     
+}
+        /*social links*/
+
+        .footer {
+          background-color: grey;
+          padding: 20px;
+        }
+        
+        .social-links ul {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        .social-links li {
+          margin: 0 10px;
+        }
+        
+        .social-links a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          text-decoration: none;
+        }
+        
+        .social-links a i {
+          font-size: 24px;
+          margin-bottom: 5px;
+        }
+        
+        .social-links a:hover {
+          color: #007bff;
+        }
+        
+        
